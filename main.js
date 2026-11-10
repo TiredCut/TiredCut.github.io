@@ -8,7 +8,7 @@ document.querySelectorAll(".card[data-id]").forEach((card) => {
   const poster = document.createElement("button");
   poster.className = "poster";
   poster.type = "button";
-  poster.setAttribute("aria-label", "Play: " + title);
+  poster.setAttribute("aria-label", t("play") + title);
   poster.style.backgroundImage = `url(https://drive.google.com/thumbnail?id=${id}&sz=w1000)`;
   poster.innerHTML = '<span class="play"></span>';
   player.appendChild(poster);

@@ -8,7 +8,7 @@ const FLAGS = {
 const I18N = {
   en: {
     "nav.work": "Work", "nav.skills": "Skills", "nav.certs": "Certificates", "nav.contact": "Contact",
-    "hero.sub": "Video editing &amp; postproduction. Clean structure, fast-paced storytelling and impactful sound design — for long-form and short-form.",
+    "hero.sub": "Video editing & postproduction. Clean structure, fast-paced storytelling and impactful sound design — for long-form and short-form.",
     "hero.watch": "Watch the work", "hero.hire": "Hire me",
     "work.label": "01 / Selected work", "work.title": "Showcase", "work.long": "Long-form", "work.short": "Short-form · 9:16",
     "c1.p": "Impactful audio depth, layered SFX and dynamic transitions that carry the cut.",
@@ -18,6 +18,8 @@ const I18N = {
     "c5.p": "The same idea, condensed into a punchy short.",
     "c6.p": 'Fast gameplay highlight built for vertical feeds. <a href="https://youtube.com/shorts/30ZMV6WoAm4" target="_blank" rel="noopener">Watch on YouTube ↗</a>',
     "skills.label": "02 / What I do", "skills.title": "Skills",
+    "skills.editing": "Editing & Storytelling", "skills.sound": "Sound Design",
+    "skills.color": "Color Grading", "skills.shorts": "Shorts & Gaming",
     "s1": "Clear structure, tight pacing and hooks that keep viewers watching — long-form and short-form.",
     "s2": "SFX, music editing and mixing that give every cut weight and rhythm.",
     "s3": "Correction and look development in DaVinci Resolve for a consistent, cinematic image.",
@@ -31,7 +33,7 @@ const I18N = {
   },
   de: {
     "nav.work": "Projekte", "nav.skills": "Skills", "nav.certs": "Zertifikate", "nav.contact": "Kontakt",
-    "hero.sub": "Videoschnitt &amp; Postproduktion. Klare Struktur, schnelles Storytelling und wirkungsvolles Sound Design — für Long-Form und Short-Form.",
+    "hero.sub": "Videoschnitt & Postproduktion. Klare Struktur, schnelles Storytelling und wirkungsvolles Sound Design — für Long-Form und Short-Form.",
     "hero.watch": "Arbeiten ansehen", "hero.hire": "Jetzt anfragen",
     "work.label": "01 / Ausgewählte Arbeiten", "work.title": "Showcase", "work.long": "Long-Form", "work.short": "Short-Form · 9:16",
     "c1.p": "Starke Audio-Tiefe, geschichtete SFX und dynamische Übergänge, die den Schnitt tragen.",
@@ -41,6 +43,8 @@ const I18N = {
     "c5.p": "Dieselbe Idee, verdichtet zu einem knackigen Short.",
     "c6.p": 'Schnelles Gameplay-Highlight für vertikale Feeds. <a href="https://youtube.com/shorts/30ZMV6WoAm4" target="_blank" rel="noopener">Auf YouTube ansehen ↗</a>',
     "skills.label": "02 / Was ich mache", "skills.title": "Skills",
+    "skills.editing": "Schnitt & Storytelling", "skills.sound": "Sound Design",
+    "skills.color": "Farbkorrektur", "skills.shorts": "Shorts & Gaming",
     "s1": "Klare Struktur, straffes Pacing und Hooks, die Zuschauer dranbleiben lassen — Long-Form und Short-Form.",
     "s2": "SFX, Musikschnitt und Mixing, die jedem Schnitt Gewicht und Rhythmus geben.",
     "s3": "Farbkorrektur und Look-Entwicklung in DaVinci Resolve für ein einheitliches, filmisches Bild.",
@@ -54,7 +58,7 @@ const I18N = {
   },
   it: {
     "nav.work": "Lavori", "nav.skills": "Competenze", "nav.certs": "Certificati", "nav.contact": "Contatto",
-    "hero.sub": "Video editing &amp; post-produzione. Struttura pulita, storytelling dal ritmo serrato e sound design d'impatto — per contenuti long-form e short-form.",
+    "hero.sub": "Video editing & post-produzione. Struttura pulita, storytelling dal ritmo serrato e sound design d'impatto — per contenuti long-form e short-form.",
     "hero.watch": "Guarda i lavori", "hero.hire": "Contattami",
     "work.label": "01 / Lavori selezionati", "work.title": "Showcase", "work.long": "Long-form", "work.short": "Short-form · 9:16",
     "c1.p": "Profondità audio d'impatto, SFX stratificati e transizioni dinamiche che sostengono il montaggio.",
@@ -64,6 +68,8 @@ const I18N = {
     "c5.p": "La stessa idea, condensata in uno short incisivo.",
     "c6.p": 'Highlight di gameplay veloce, pensato per i feed verticali. <a href="https://youtube.com/shorts/30ZMV6WoAm4" target="_blank" rel="noopener">Guarda su YouTube ↗</a>',
     "skills.label": "02 / Cosa faccio", "skills.title": "Competenze",
+    "skills.editing": "Montaggio e storytelling", "skills.sound": "Sound design",
+    "skills.color": "Color grading", "skills.shorts": "Short e gaming",
     "s1": "Struttura chiara, ritmo serrato e hook che tengono incollati gli spettatori — long-form e short-form.",
     "s2": "SFX, montaggio musicale e mixaggio che danno peso e ritmo a ogni taglio.",
     "s3": "Correzione colore e sviluppo del look in DaVinci Resolve per un'immagine coerente e cinematografica.",
