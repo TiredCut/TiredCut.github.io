@@ -10,8 +10,23 @@ document.querySelectorAll(".card[data-id]").forEach((card) => {
   poster.className = "poster";
   poster.type = "button";
   poster.setAttribute("aria-label", t("play") + title);
-  poster.style.backgroundImage = `url(https://drive.google.com/thumbnail?id=${id}&sz=w1000)`;
-  poster.innerHTML = '<span class="play"></span>';
+  const image = document.createElement("img");
+  image.className = "poster-image";
+  image.alt = "";
+  image.decoding = "async";
+  image.fetchPriority = "low";
+  image.src = yt
+    ? `https://i.ytimg.com/vi/${yt}/hqdefault.jpg`
+    : `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+  if (yt) {
+    image.addEventListener("error", () => {
+      image.src = `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+    }, { once: true });
+  }
+  poster.append(image);
+  const playIcon = document.createElement("span");
+  playIcon.className = "play";
+  poster.append(playIcon);
   player.appendChild(poster);
 
   poster.addEventListener("click", () => {

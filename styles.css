@@ -147,6 +147,8 @@ a { color: inherit; }
 
 /* SECTIONS */
 .section { position: relative; max-width: 1300px; margin: 0 auto; padding: clamp(4rem, 10vh, 7rem) clamp(1.25rem, 4vw, 3rem); }
+.section#about { background: radial-gradient(ellipse at 90% 25%, rgba(225,37,27,.075), transparent 34rem); }
+.section#about h2 { text-transform: none; }
 .section#work { background: radial-gradient(ellipse at 88% 16%, rgba(225,37,27,.055), transparent 32rem); }
 .section#skills { background: radial-gradient(ellipse at 12% 58%, rgba(225,37,27,.06), transparent 30rem); }
 .section#certs { background: radial-gradient(ellipse at 82% 55%, rgba(225,37,27,.05), transparent 28rem); }
@@ -172,7 +174,8 @@ h2 { font-family: var(--display); font-weight: 400; font-size: clamp(2.8rem, 7vw
 .player { display: block; position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; }
 .vertical .player { aspect-ratio: 9/16; }
 .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.poster { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; background: #050505 center/cover no-repeat; display: grid; place-items: center; }
+.poster { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; background: #050505; display: grid; place-items: center; }
+.poster-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .poster::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,.6)); transition: background .3s; }
 .poster:hover::after { background: rgba(0,0,0,.25); }
 .play { position: relative; z-index: 1; width: 72px; height: 72px; border-radius: 50%; background: var(--red); display: grid; place-items: center; transition: transform .25s; box-shadow: 0 10px 30px rgba(225,37,27,.4); }
@@ -187,14 +190,20 @@ h2 { font-family: var(--display); font-weight: 400; font-size: clamp(2.8rem, 7vw
 .card p a { color: var(--text); }
 
 /* SKILLS */
-.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: .8rem; }
-.skill { position: relative; min-height: 220px; overflow: hidden; padding: 1.5rem 1.4rem 1.6rem; border: 1px solid #292424; border-radius: 8px; background: linear-gradient(145deg, rgba(255,255,255,.025), transparent 55%), rgba(18,18,18,.88); transition: border-color .25s, background .25s, transform .25s; }
-.skill::before { content: ""; position: absolute; top: 0; left: 1.4rem; width: 2.5rem; height: 2px; background: var(--red); box-shadow: 0 0 12px rgba(225,37,27,.6); }
+.about-copy { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3.5rem); }
+.about-copy p { position: relative; padding: 1.25rem 1.5rem; border-left: 1px solid var(--red-dim); background: linear-gradient(110deg, rgba(225,37,27,.055), rgba(18,18,18,.52) 48%, transparent); color: #c4c0bb; font-size: clamp(1rem, 1.3vw, 1.1rem); line-height: 1.85; }
+.about-copy p::before { content: ""; position: absolute; left: -1px; top: 1.25rem; width: 2px; height: 2.5rem; background: var(--red); box-shadow: 0 0 12px rgba(225,37,27,.55); }
+
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+.skill { position: relative; min-height: 270px; overflow: hidden; padding: 1.4rem 1.35rem 1.5rem; border: 1px solid #292424; border-radius: 8px; background: linear-gradient(145deg, rgba(255,255,255,.025), transparent 55%), rgba(18,18,18,.88); transition: border-color .25s, background .25s, transform .25s; }
+.skill::before { content: ""; position: absolute; top: 0; left: 1.35rem; width: 2.5rem; height: 2px; background: var(--red); box-shadow: 0 0 12px rgba(225,37,27,.6); }
 .skill::after { content: ""; position: absolute; right: -2.2rem; bottom: -3rem; width: 8rem; height: 8rem; border: 1px solid rgba(225,37,27,.11); border-radius: 50%; box-shadow: 0 0 0 12px rgba(225,37,27,.025), 0 0 0 24px rgba(225,37,27,.018); pointer-events: none; }
 .skill:hover { border-color: #67302d; background: linear-gradient(145deg, rgba(225,37,27,.08), rgba(18,18,18,.96) 62%); transform: translateY(-2px); }
-.skill .num { display: inline-flex; align-items: center; justify-content: center; min-width: 2.1rem; min-height: 1.55rem; padding: .2rem .4rem; border: 1px solid rgba(225,37,27,.3); border-radius: 4px; background: rgba(225,37,27,.08); color: #ff6258; font-size: .68rem; }
-.skill h3 { position: relative; z-index: 1; font-size: 1.2rem; margin: 1.35rem 0 .6rem; }
-.skill p { color: var(--muted); font-size: .92rem; }
+.skill-top { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.7rem; }
+.skill .num { display: inline-flex; align-items: center; justify-content: center; min-width: 2.25rem; min-height: 1.8rem; padding: .25rem .45rem; border: 1px solid rgba(225,37,27,.58); border-radius: 4px; background: rgba(225,37,27,.14); color: #ff746c; font-size: .72rem; box-shadow: 0 0 12px rgba(225,37,27,.16), inset 0 0 10px rgba(225,37,27,.08); }
+.skill-code { color: #77706c; font-size: .68rem; letter-spacing: .08em; }
+.skill h3 { position: relative; z-index: 1; font-size: 1.15rem; line-height: 1.25; margin: 0 0 .75rem; }
+.skill p { position: relative; z-index: 1; color: var(--muted); font-size: .9rem; line-height: 1.7; }
 
 /* CERTS */
 .certs { display: grid; gap: 1rem; }
@@ -223,8 +232,20 @@ h2 { font-family: var(--display); font-weight: 400; font-size: clamp(2.8rem, 7vw
 }
 
 @media (max-width: 640px) {
+  .nav { gap: .5rem; padding-inline: 1rem; }
+  .logo { font-size: 1.25rem; }
+  .nav-links { gap: .5rem; }
+  .nav-links a[href="#about"] { display: inline-flex; font-size: .78rem; }
+  .nav-links .nav-cta { padding: .4rem .65rem; }
+  .lang-btn { gap: .35rem; padding: .4rem .5rem; }
   .hero::after { top: 19%; right: -.5rem; width: 12rem; opacity: .4; }
   .track-ruler { font-size: .45rem; }
   .track-label { flex-basis: 1.45rem; }
   .track { margin-top: 3rem; }
+  .about-copy, .skills { grid-template-columns: 1fr; }
+  .skill { min-height: 0; }
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
