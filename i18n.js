@@ -28,7 +28,6 @@ const I18N = {
     "contact.label": "04 / Contact",
     "contact.title": 'Let\'s build something <span class="accent">engaging.</span>',
     "contact.p": "Available for long-form and short-form workflows. Send me a message on Discord.",
-    "contact.copy": "click to copy", "contact.copied": "copied ✓", "contact.user": "username: tired0844",
     "play": "Play: ",
   },
   de: {
@@ -53,7 +52,6 @@ const I18N = {
     "contact.label": "04 / Kontakt",
     "contact.title": 'Lass uns etwas <span class="accent">Packendes</span> erschaffen.',
     "contact.p": "Verfügbar für Long-Form- und Short-Form-Projekte. Schreib mir einfach auf Discord.",
-    "contact.copy": "zum Kopieren klicken", "contact.copied": "kopiert ✓", "contact.user": "Benutzername: tired0844",
     "play": "Abspielen: ",
   },
   it: {
@@ -78,7 +76,6 @@ const I18N = {
     "contact.label": "04 / Contatto",
     "contact.title": 'Creiamo qualcosa di <span class="accent">coinvolgente.</span>',
     "contact.p": "Disponibile per progetti long-form e short-form. Scrivimi un messaggio su Discord.",
-    "contact.copy": "clicca per copiare", "contact.copied": "copiato ✓", "contact.user": "nome utente: tired0844",
     "play": "Riproduci: ",
   },
 };

@@ -47,8 +47,21 @@
       <a href="#contact" class="btn btn-ghost" data-i18n="hero.hire">Hire me</a>
     </div>
     <div class="track" aria-hidden="true">
-      <div class="track-row v"><i style="flex:3"></i><i style="flex:1.2"></i><i style="flex:2"></i><i style="flex:.6"></i><i style="flex:2.4"></i><i style="flex:1"></i></div>
-      <div class="track-row a"><i style="flex:2"></i><i style="flex:2.5"></i><i style="flex:1"></i><i style="flex:3"></i><i style="flex:1.5"></i></div>
+      <div class="track-row v"><span class="track-label">V1</span><i style="flex:3"></i><i style="flex:1.2"></i><i class="clip-keyframe" style="flex:2"></i><i style="flex:.6"></i><i style="flex:2.4"></i><i style="flex:1"></i></div>
+      <div class="track-row a">
+        <span class="track-label">A1</span>
+        <svg class="track-speaker" viewBox="0 0 16 16" focusable="false"><path d="M2 6v4h3l4 3V3L5 6H2Zm9-.5a4 4 0 0 1 0 5m1.5-7a7 7 0 0 1 0 9" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <i style="flex:2"></i><i style="flex:2.5"></i><i style="flex:1"></i><i style="flex:3"></i><i style="flex:1.5"></i>
+      </div>
+      <div class="track-row wave"><span class="track-label">A2</span>
+        <i style="--level: 28%"></i><i style="--level: 52%"></i><i style="--level: 38%"></i><i style="--level: 82%"></i>
+        <i style="--level: 64%"></i><i style="--level: 35%"></i><i style="--level: 72%"></i><i style="--level: 94%"></i>
+        <i style="--level: 46%"></i><i style="--level: 60%"></i><i style="--level: 30%"></i><i style="--level: 76%"></i>
+        <i style="--level: 100%"></i><i style="--level: 58%"></i><i style="--level: 34%"></i><i style="--level: 68%"></i>
+        <i style="--level: 88%"></i><i style="--level: 42%"></i><i style="--level: 56%"></i><i style="--level: 26%"></i>
+        <i style="--level: 70%"></i><i style="--level: 92%"></i><i style="--level: 48%"></i><i style="--level: 32%"></i>
+        <i style="--level: 78%"></i><i style="--level: 54%"></i><i style="--level: 100%"></i><i style="--level: 40%"></i>
+      </div>
       <div class="playhead"></div>
     </div>
   </header>
@@ -169,10 +182,9 @@
     <span class="mono label" data-i18n="contact.label">04 / Contact</span>
     <h2 data-i18n-html="contact.title">Let's build something <span class="accent">engaging.</span></h2>
     <p data-i18n="contact.p">Available for long-form and short-form workflows. Send me a message on Discord.</p>
-    <button class="btn btn-primary btn-lg" id="discord" type="button">
-      Discord: <span class="mono">tired0844</span>
-      <span class="copy-hint" id="copyHint" data-i18n="contact.copy">click to copy</span>
-    </button>
+    <a class="btn btn-primary btn-lg" id="discord" href="https://discord.com/users/1460975125695434898" target="_blank" rel="noopener">
+      Add me on Discord: <span class="mono">tired0844</span>
+    </a>
     <div class="foot mono">© <span id="year"></span> TIRED CUT</div>
   </footer>
 

@@ -4,6 +4,7 @@ document.querySelectorAll(".card[data-id]").forEach((card) => {
   const yt = card.dataset.yt;
   const title = card.querySelector("h3").textContent;
   const player = card.querySelector(".player");
+  if (player instanceof HTMLVideoElement) return;
 
   const poster = document.createElement("button");
   poster.className = "poster";
@@ -34,19 +35,5 @@ const pad = (n) => String(n).padStart(2, "0");
   tc.textContent = `${pad(Math.floor(t / 3600))}:${pad(Math.floor(t / 60) % 60)}:${pad(Math.floor(t) % 60)}:${pad(Math.floor((t % 1) * 25))}`;
   requestAnimationFrame(tick);
 })();
-
-// Copy Discord handle
-const discord = document.getElementById("discord");
-const hint = document.getElementById("copyHint");
-discord.addEventListener("click", async () => {
-  window.open("https://discord.com/users/1460975125695434898", "_blank", "noopener");
-  try {
-    await navigator.clipboard.writeText("tired0844");
-    hint.textContent = t("contact.copied");
-  } catch {
-    hint.textContent = t("contact.user");
-  }
-  setTimeout(() => (hint.textContent = t("contact.copy")), 2000);
-});
 
 document.getElementById("year").textContent = new Date().getFullYear();
