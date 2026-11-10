@@ -18,7 +18,7 @@ document.querySelectorAll(".card[data-id]").forEach((card) => {
     const iframe = document.createElement("iframe");
     iframe.src = yt
       ? `https://www.youtube-nocookie.com/embed/${yt}?autoplay=1&rel=0`
-      : `https://drive.google.com/file/d/${id}/preview`;
+      : `https://drive.google.com/file/d/${id}/preview?autoplay=1`;
     iframe.title = title;
     iframe.allow = "autoplay; fullscreen; encrypted-media; picture-in-picture";
     iframe.allowFullscreen = true;
