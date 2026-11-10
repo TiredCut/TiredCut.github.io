@@ -30,10 +30,11 @@ document.querySelectorAll(".card[data-id]").forEach((card) => {
 const tc = document.getElementById("tc");
 const start = performance.now();
 const pad = (n) => String(n).padStart(2, "0");
-(function tick() {
+function tick() {
   const t = (performance.now() - start) / 1000;
   tc.textContent = `${pad(Math.floor(t / 3600))}:${pad(Math.floor(t / 60) % 60)}:${pad(Math.floor(t) % 60)}:${pad(Math.floor((t % 1) * 25))}`;
-  requestAnimationFrame(tick);
-})();
+}
+tick();
+setInterval(tick, 100);
 
 document.getElementById("year").textContent = new Date().getFullYear();
