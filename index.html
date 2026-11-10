@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIRED CUT — Video Editing & Postproduction</title>
+  <meta name="description" content="TIRED CUT — video editor for long-form and short-form content. Sound design, color grading, gaming edits. DaVinci Resolve certified.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#top" class="logo">TIRED<span>CUT</span></a>
+    <div class="nav-links">
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#certs" data-i18n="nav.certs">Certificates</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+          <span class="flag" id="langFlag"></span><span class="mono" id="langCode">EN</span><span class="chev" aria-hidden="true">▾</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="menu" hidden>
+          <li><button type="button" role="menuitem" data-lang="de"><span class="flag" data-flag="de"></span>Deutsch</button></li>
+          <li><button type="button" role="menuitem" data-lang="en"><span class="flag" data-flag="en"></span>English</button></li>
+          <li><button type="button" role="menuitem" data-lang="it"><span class="flag" data-flag="it"></span>Italiano</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="timecode mono" aria-hidden="true"><span class="rec"></span> REC <span id="tc">00:00:00:00</span></div>
+    <h1 class="hero-title">
+      <span class="line">TIRED</span>
+      <span class="line accent">CUT<span class="cursor">_</span></span>
+    </h1>
+    <p class="hero-sub" data-i18n-html="hero.sub">Video editing &amp; postproduction. Clean structure, fast-paced storytelling and impactful sound design — for long-form and short-form.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary" data-i18n="hero.watch">Watch the work</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.hire">Hire me</a>
+    </div>
+    <div class="track" aria-hidden="true">
+      <div class="track-row v"><i style="flex:3"></i><i style="flex:1.2"></i><i style="flex:2"></i><i style="flex:.6"></i><i style="flex:2.4"></i><i style="flex:1"></i></div>
+      <div class="track-row a"><i style="flex:2"></i><i style="flex:2.5"></i><i style="flex:1"></i><i style="flex:3"></i><i style="flex:1.5"></i></div>
+      <div class="playhead"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="work" class="section">
+      <div class="section-head">
+        <span class="mono label" data-i18n="work.label">01 / Selected work</span>
+        <h2 data-i18n="work.title">Showcase</h2>
+      </div>
+
+      <div class="grid featured">
+        <article class="card" data-id="1k3b0vb7oQx6_V5U011sb6KBQHf8k0rlw">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">Sound Design</span>
+            <h3>Cinematic Sound Design</h3>
+            <p data-i18n="c1.p">Impactful audio depth, layered SFX and dynamic transitions that carry the cut.</p>
+          </div>
+        </article>
+        <article class="card" data-id="1u4fNV0ywHQjQmSPUmgbie5bUOq96Lnoi">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">Color Grading</span>
+            <h3>High-End Color Grading</h3>
+            <p data-i18n="c2.p">Premium color correction and atmospheric look development.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="subhead mono label" data-i18n="work.long">Long-form</div>
+      <div class="grid">
+        <article class="card" data-id="1zBiHzuaZDDa5MqQ-Wd2TlA2oK8wwZPDx">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">YouTube · Documentary</span>
+            <h3>Restaurants Who Got Worse</h3>
+            <p data-i18n="c3.p">Trial edit for a commentary / documentary channel — first 6:45 min. Pacing, B-roll and retention-focused structure.</p>
+          </div>
+        </article>
+        <article class="card" data-id="1EDMvYcZ7XA9VrmfzZnmjayj1yU2Ht3pq">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">Gaming · Long</span>
+            <h3>Sekiro — Expectations vs. Reality</h3>
+            <p data-i18n="c4.p">Comedic gaming edit with timing-driven cuts, meme inserts and sound effects.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="subhead mono label" data-i18n="work.short">Short-form · 9:16</div>
+      <div class="grid shorts">
+        <article class="card vertical" data-id="18sTbE76lh8i3TH_JgEvaJfCHxsPaSGwS">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">Short</span>
+            <h3>Sekiro — Expectations vs. Reality</h3>
+            <p data-i18n="c5.p">The same idea, condensed into a punchy short.</p>
+          </div>
+        </article>
+        <article class="card vertical" data-yt="30ZMV6WoAm4" data-id="1kDQPeAnvYtb4MeD4axChCoEl_9irtB2M">
+          <div class="player"></div>
+          <div class="card-body">
+            <span class="tag">YouTube Short</span>
+            <h3>Sekiro Gameplay Short</h3>
+            <p data-i18n-html="c6.p">Fast gameplay highlight built for vertical feeds. <a href="https://youtube.com/shorts/30ZMV6WoAm4" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="mono label" data-i18n="skills.label">02 / What I do</span>
+        <h2 data-i18n="skills.title">Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skill"><span class="mono num">A1</span><h3>Editing &amp; Storytelling</h3><p data-i18n="s1">Clear structure, tight pacing and hooks that keep viewers watching — long-form and short-form.</p></div>
+        <div class="skill"><span class="mono num">A2</span><h3>Sound Design</h3><p data-i18n="s2">SFX, music editing and mixing that give every cut weight and rhythm.</p></div>
+        <div class="skill"><span class="mono num">V1</span><h3>Color Grading</h3><p data-i18n="s3">Correction and look development in DaVinci Resolve for a consistent, cinematic image.</p></div>
+        <div class="skill"><span class="mono num">V2</span><h3>Shorts &amp; Gaming</h3><p data-i18n="s4">Vertical edits, gaming content, memes and timing-driven comedy for TikTok, Reels &amp; Shorts.</p></div>
+      </div>
+    </section>
+
+    <section id="certs" class="section">
+      <div class="section-head">
+        <span class="mono label" data-i18n="certs.label">03 / Qualifications</span>
+        <h2 data-i18n="certs.title">Certificates</h2>
+      </div>
+      <div class="certs">
+        <a class="cert" href="https://drive.google.com/file/d/1htRimbdUHLBzWJR1T2041fkUMZUsqlFD/view" target="_blank" rel="noopener">
+          <span class="cert-badge">DR20</span>
+          <span><strong>DaVinci Resolve 20 — Beginner's Guide</strong><small>Blackmagic Design · Certified User</small></span>
+          <span class="arrow">↗</span>
+        </a>
+        <a class="cert" href="https://drive.google.com/file/d/1rm3KIF-8GZV96dIuBZ7mQNZ0yjgaEAIF/view" target="_blank" rel="noopener">
+          <span class="cert-badge">DR20</span>
+          <span><strong>DaVinci Resolve 20 — Editor's Guide</strong><small>Blackmagic Design · Certified User</small></span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="contact">
+    <span class="mono label" data-i18n="contact.label">04 / Contact</span>
+    <h2 data-i18n-html="contact.title">Let's build something <span class="accent">engaging.</span></h2>
+    <p data-i18n="contact.p">Available for long-form and short-form workflows. Send me a message on Discord.</p>
+    <button class="btn btn-primary btn-lg" id="discord" type="button">
+      Discord: <span class="mono">tired0844</span>
+      <span class="copy-hint" id="copyHint" data-i18n="contact.copy">click to copy</span>
+    </button>
+    <div class="foot mono">© <span id="year"></span> TIRED CUT</div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
